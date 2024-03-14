@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;                         
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+}
+.navbar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+#logo{
+    width: 130px;
+    
+}
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 11%;
+}
+.title h1{
+    font-size: 53px;
+}
+#lastname{
+    color: orange;
+}
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 30%;
+    border-radius: 6px;
+
+}
+.images{
+    width: 45%;
+    height: 80%;
+    margin-left: 100px;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 1s ,left 2s;
+    
+    
+}
+.images:hover #girl{
+    left: 40%;
+}
+.images:hover #shape{
+    bottom: 50px;
+}
+
+#about{
+    margin: 5% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+  
+}
+.heading h1{
+    font-size: 35px;
+}
+.heading span{
+    font-size: 25px;
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.about-image img{
+    width: 80%;
+}
+.about-details {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+ .about-details p{
+    text-align: justify;
+    /* (same line start and end expect last line) */ 
+ }
+ .information{
+    margin-top: 30px;
+ }
+ .info-box{
+    margin-bottom: 20px;
+ }
+ .info-box span{
+    margin-left: 15px;
+ }
+
+ #skills{
+    margin: 8% 8% 0% 8%;
+ }
+ .skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* it used to the image and content placed between both side otherwise the image inthe bottm */
+     gap: 2rem;  
+     /* 1rem=16px */
+     margin-top: 20px;
+     
+ }
+ .skill-img img{
+    width: 90%;
+
+ }
+ .bar-container{
+    display: flex;
+    justify-content: space-between;
+    /* see two sides */
+    padding: 1rem 0px;
+    margin-bottom: 2rem;
+align-items: center;
+position: relative;
+ }
+ .bar-container{
+    font-size: 20px;
+    font-weight: 600;
+    }
+ .bar-box{
+     width: 100%;
+     height: 0.5rem;
+     background-color: black;
+     border-radius: 10px;
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+ }
+ .html-bar{
+    background-color: orange;
+    width: 95%;
+ }
+ .css-bar{
+    background-color: orange;
+    width: 88%;
+ }
+ .js-bar{
+    background-color: orange;
+    width: 89%;
+ }
+ .react-bar{
+    background-color: orange;
+    width: 85%;
+ }
+ 
+ .icon-set{
+    display: flex;
+    align-items: center;/* (vertically center) */
+    justify-content: center;/* (horizontally center) */
+    margin-top: 3%;
+
+ }
+ .icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid; */
+    border-radius: 50%;/* exactly round if height and weight are equal */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+
+ }
+ .icon i{
+    font-size: 30px;
+    color: black;
+ }
+ .icon:hover{
+    background-image:linear-gradient(to top left,rgb(255, 123, 0),yellow);
+    
+ }
+ .icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+ }
+ @keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+ }
+ footer{
+    margin: 50px 0px;
+ }
+ footer p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    
+ }
+ .up-arrow{
+    float: right; /* arrow placed at right */
+    background-image:linear-gradient(to top left,rgb(255, 123, 0),yellow); 
+     margin: 30px 20px 30px 0px;
+}
+.up-arrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+ 
+
+   
+
+
+
+
+
+
